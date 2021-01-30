@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 15:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:4
+msgid "title: FreeBSD Architecture Handbook authors:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:8
+#, no-wrap
+msgid ""
+"author: The FreeBSD Documentation Project\n"
+"copyright: Copyright © 2000-2006, 2012-2013 The FreeBSD Documentation "
+"Project\n"
+"releaseinfo: \"$FreeBSD$\" \n"
+"trademarks: [\"freebsd\", \"apple\", \"microsoft\", \"unix\", \"general\"] "
+"\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/books/arch-handbook/_index.adoc:10
+#, no-wrap
+msgid "FreeBSD Architecture Handbook"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:30
+msgid "ifeval::[\"{backend}\" == \"html5\"]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:38 documentation/content/en/books/arch-handbook/_index.adoc:48 documentation/content/en/books/arch-handbook/_index.adoc:58
+msgid "endif::[]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:40
+msgid "ifeval::[\"{backend}\" == \"pdf\"]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:50
+msgid "ifeval::[\"{backend}\" == \"epub3\"]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:61
+msgid "Abstract"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:63
+msgid ""
+"Welcome to the FreeBSD Architecture Handbook. This manual is a _work in "
+"progress_ and is the work of many individuals. Many sections do not yet "
+"exist and some of those that do exist need to be updated. If you are "
+"interested in helping with this project, send email to the {freebsd-doc}."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:65
+msgid ""
+"The latest version of this document is always available from the "
+"link:https://www.FreeBSD.org/[FreeBSD World Wide Web server]. It may also be "
+"downloaded in a variety of formats and compression options from the "
+"https://download.freebsd.org/ftp/doc/[FreeBSD FTP server] or one of the "
+"numerous link:{handbook}#mirrors-ftp/[mirror sites]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:67
+msgid "'''"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/arch-handbook/_index.adoc:69
+msgid "toc::[]"
+msgstr ""
+
+#.  Section one
+#. type: Title =
+#: documentation/content/en/books/arch-handbook/_index.adoc:72
+#, no-wrap
+msgid "Kernel"
+msgstr ""
+
+#.  Section two
+#. type: Title =
+#: documentation/content/en/books/arch-handbook/_index.adoc:85
+#, no-wrap
+msgid "Device Drivers"
+msgstr ""
+
+#.  Section three
+#. type: Title =
+#: documentation/content/en/books/arch-handbook/_index.adoc:98
+#, no-wrap
+msgid "Appendices"
+msgstr ""

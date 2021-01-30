@@ -1,0 +1,1446 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 15:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:5
+#, no-wrap
+msgid ""
+"title: FreeBSD Git Primer (Don’t PANIC)\n"
+"releaseinfo: \"$FreeBSD$\" \n"
+"trademarks: [\"freebsd\", \"general\"]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/articles/git-primer/_index.adoc:7
+#, no-wrap
+msgid "FreeBSD Git Primer (Don’t PANIC)"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:18
+msgid ""
+"New committers are assumed to already be familiar with the basic operation "
+"of Git. If not, start by reading the link:https://git-scm.com/book/en/v2[Git "
+"Book]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:20
+msgid "toc::[]"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:21
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:24
+msgid ""
+"Git is a distributed version control system (DVCS), which means that the "
+"entire repository, including all of the history, is maintained along with "
+"each copy (clone). A developer makes changes to their local repository, then "
+"shares those changes with other repositories. Git uses *fetch*, *pull*, and "
+"*push* to refer to these sharing operations."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:26
+msgid ""
+"In the DVCS model there are multiple repositories, each with their own view "
+"of history. A canonical or \"source of truth\" repository is established by "
+"convention - cgit-beta.freebsd.org is FreeBSD's canonical repository. We'll "
+"refer to the canonical repository as \"upstream.\""
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:28
+msgid ""
+"The simplest case of making a change in the FreeBSD tree involves three "
+"steps:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:29 documentation/content/en/articles/git-primer/_index.adoc:39
+msgid "Acquire latest changes from upstream"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:30
+msgid "Commit change locally"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:31 documentation/content/en/articles/git-primer/_index.adoc:41
+msgid "Push to upstream"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:33
+msgid ""
+"In some cases there will be newer changes in the upstream repository, as "
+"well as local changes that have not yet been pushed there."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:35
+msgid ""
+"There are two main approaches for dealing with this in a DVCS world - a "
+"rebase workflow, or a merge workflow. The rebase workflow \"replays\" the "
+"local commits on top of the upstream history, and maintains a linear "
+"progression. The merge workflow adds the new commits via a merge. The "
+"history logically diverges into two or more branches, coming back together "
+"via the merge."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:37
+msgid ""
+"In FreeBSD we use a rebase workflow. In the case of having local commits not "
+"yet upstream the steps are:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:40
+msgid "Rebase local changes on upstream"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:43
+msgid "Examples of these cases are presented in this primer."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:45
+msgid "XXX describe git index"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:46
+#, no-wrap
+msgid "Installing Git"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:49
+msgid ""
+"Git can be installed from the FreeBSD package collection by issuing this "
+"command:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:53
+#, no-wrap
+msgid "# pkg install git\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:56
+msgid "or from the ports tree:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:61
+#, no-wrap
+msgid ""
+"# cd /usr/ports/devel/git\n"
+"# make all install clean\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:63
+#, no-wrap
+msgid "Initial Configuration"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:66
+msgid "There are a number of global git configuration options that should be set:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:71
+#, no-wrap
+msgid ""
+"% git config --global user.name \"Inigo Montoya\" # You killed my father\n"
+"% git config --global user.email \"imontoya@FreeBSD.org\"\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:73
+#, no-wrap
+msgid "Getting Started"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:76
+msgid ""
+"There are a few ways to obtain a working copy of the tree from Git. This "
+"section will explain them."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:77
+#, no-wrap
+msgid "Direct Checkout"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:80
+msgid ""
+"The first is to check out directly from the main repository. For the src "
+"tree, use:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:84
+#, no-wrap
+msgid "% git clone -o upstream git@cgit-beta.freebsd.org/src.git /usr/src\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:87
+msgid "For the doc tree, use:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:91
+#, no-wrap
+msgid "% git clone -o upstream git@cgit-beta.freebsd.org/doc.git /usr/doc\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:94
+msgid "For the ports tree, use:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:98
+#, no-wrap
+msgid "% git clone -o upstream git@cgit-beta.freebsd.org/ports.git /usr/ports\n"
+msgstr ""
+
+#. type: delimited block =
+#: documentation/content/en/articles/git-primer/_index.adoc:103
+msgid ""
+"Though the remaining examples in this document are written with the workflow "
+"of working with the src tree in mind, the underlying concepts are the same "
+"for working with the doc and the ports tree. Ports related Git operations "
+"are listed in Section XXX, “Ports Specific FAQ”."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:106
+msgid ""
+"The above command will check out a CURRENT source tree as /usr/src/, which "
+"can be any target directory on the local filesystem. Omitting the final "
+"argument of that command causes the working copy, in this case, to be named "
+"“src”, but that can be renamed safely."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:108
+msgid ""
+"git@ means the git protocol tunnelled over SSH. The name of the server is "
+"*cgit-beta.freebsd.org* and *src* is the repository."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:111
+msgid ""
+"XXX If your FreeBSD login name is different from the login name used on the "
+"local machine, either include it in the URL (for example "
+"jarjar@cgit-beta.freebsd.org/src.git), or add an entry to ~/.ssh/config in "
+"the form:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:116
+#, no-wrap
+msgid ""
+"Host cgit-beta.freebsd.org\n"
+"\tUser jarjar\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:119
+#, no-wrap
+msgid ""
+"**Note**: The git diff command does not require access to the server, as git "
+"stores the entire repository history locally.\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:120
+#, no-wrap
+msgid "RELENG_* Branches and General Layout"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:123
+msgid ""
+"In *git@cgit-beta.freebsd.org/src.git*, *src* refers to the source "
+"tree. Similarly, *ports* refers to the ports tree, and so on. These are "
+"separate repositories with their own revision hashes, access controls and "
+"commit mail."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:125
+msgid ""
+"For the base repository, the main branch refers to the -CURRENT tree. For "
+"example, *bin/ls* is what would go into */usr/src/bin/ls* in a release. Some "
+"key branches:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:127
+msgid "XXX"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:128
+#, no-wrap
+msgid "*main* which corresponds to HEAD, also known as -CURRENT.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:129
+#, no-wrap
+msgid "*stable/n* which corresponds to RELENG_n.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:130
+#, no-wrap
+msgid "*releng/n.n* which corresponds to RELENG_n_n.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:131
+#, no-wrap
+msgid "*release/n.n.n* which corresponds to RELENG_n_n_n_RELEASE.\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:132
+#, no-wrap
+msgid "FreeBSD Documentation Project Branches and Layout"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:135
+msgid ""
+"In *git@cgit-beta.freebsd.org/doc.git*, *doc* refers to the repository root "
+"of the documentation tree."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:137
+msgid ""
+"In general, most FreeBSD Documentation Project work will be done within the "
+"main branch of the documentation source tree."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:139
+msgid ""
+"FreeBSD documentation is written and/or translated to various languages, "
+"each in a separate directory in the main branch."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:141
+msgid ""
+"Each translation set contains several subdirectories for the various parts "
+"of the FreeBSD Documentation Project. A few noteworthy directories are:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:143
+#, no-wrap
+msgid ""
+"*/articles/* contains the source code for articles written by various "
+"FreeBSD contributors.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:144
+#, no-wrap
+msgid ""
+"*/books/* contains the source code for the different books, such as the "
+"FreeBSD Handbook.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:145
+#, no-wrap
+msgid "*/htdocs/* contains the source code for the FreeBSD website.\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:146
+#, no-wrap
+msgid "FreeBSD Ports Tree Branches and Layout"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:149
+msgid ""
+"In *git@cgit-beta.freebsd.org/ports.git*, *ports* refers to the repository "
+"root of the ports tree."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:151
+msgid ""
+"In general, most FreeBSD port work will be done within the main/ branch of "
+"the ports tree which is the actual ports tree used to install software. Some "
+"other key branches:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:153
+msgid ""
+"RELENG_n_n_n which corresponds to RELENG_n_n_n is used to merge back "
+"security updates in preparation for a release."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:154
+msgid ""
+"RELEASE_n_n_n which corresponds to RELEASE_n_n_n represents a release tag of "
+"the ports tree."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:155
+msgid ""
+"/tags/RELEASE_n_EOL represents the end of life tag of a specific FreeBSD "
+"branch."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:156
+#, no-wrap
+msgid "Daily Use"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:159
+msgid ""
+"While git has a lot of flexibility in how it can be used, we will "
+"concentrate on how we expect it to be used by FreeBSD Developers in this "
+"section, by which we mean people who are planning to commit changes to one "
+"of the three FreeBSD repositories: `doc, ports, src.`"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:161
+msgid ""
+"One concept to keep fixed in your mind as you begin working with git on "
+"FreeBSD is that our git repository is only meant for commits to the `main` "
+"branch, or merges from the `main` branch to one of our subsidiary branches, "
+"such as `STABLE`. The FreeBSD repos are not meant for, nor do they support, "
+"developer branches. If you wish to have a long lived, shared, branch for "
+"collaboration, that will be covered in the Collaboration Workflow section."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:162
+#, no-wrap
+msgid "Help"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:165
+msgid "git has built in help documentation. It can be accessed by typing:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:170
+#, no-wrap
+msgid ""
+"% git help\n"
+"% git help <subcommand>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:173
+msgid ""
+"Additional information can be found in the "
+"link:https://git-scm.com/book/en/v2[Git Book]."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:174
+#, no-wrap
+msgid "Checkout"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:177
+msgid "As seen earlier, to check out the FreeBSD head branch:"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:178
+#, no-wrap
+msgid "Anonymous Checkout"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:182
+msgid ""
+"XXX It is possible to anonymously check out the FreeBSD repository with "
+"Git. This will give access to a read-only tree that can be updated, but not "
+"committed back to the main repository. To do this, use:"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:183
+#, no-wrap
+msgid "Status"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:186
+msgid "To view the local changes that have been made to the working copy:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:190
+#, no-wrap
+msgid "% git status\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:193
+msgid "Git reports files in three different categories:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:194
+msgid "Untracked (i.e., new files not yet added to the tree)"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:195
+msgid "Unstaged (modified, but not added to the index)"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:196
+msgid "Staged (modified and added to the index, for the next commit)"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:197
+#, no-wrap
+msgid "Editing, Staging,  and Committing"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:200
+msgid ""
+"To add a new file or stage all changes to a previously added file to the "
+"index:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:204
+#, no-wrap
+msgid "% git add path/to/file\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:207
+msgid ""
+"Likewise, you can stage files for removal (and remove them from the current "
+"checkout) with"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:211
+#, no-wrap
+msgid "% git rm path/to/file\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:214
+msgid "Files can be moved with"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:218
+#, no-wrap
+msgid "% git mv foo.c bar.c\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:221
+msgid ""
+"To review changes to previously added files and add some or all of those "
+"changes to the index:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:225
+#, no-wrap
+msgid "% git add -p\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:228
+msgid "To review changes staged for commit:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:232
+#, no-wrap
+msgid "% git diff --staged\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:235
+msgid "To commit staged changes (ones that have already been added to the index):"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:239
+#, no-wrap
+msgid "% git commit\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:241
+#, no-wrap
+msgid "XXX: git push here or cover rebase first?"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:243
+msgid ""
+"EM: suggest rebase first, we should discourage `git commit -a && git "
+"push`-style approach."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:244
+#, no-wrap
+msgid "Rebasing"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:246
+#, no-wrap
+msgid "Pushing commits to the canonical repository"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:248
+#, no-wrap
+msgid "Log and Annotate"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:251
+msgid ""
+"`git log` shows revisions and commit messages, most recent first, for files "
+"or directories. When used on a directory, all revisions that affected the "
+"directory and files within that directory are shown."
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:255
+#, no-wrap
+msgid "% git log sys/kern\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:258
+msgid "To show the log for a single commit:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:262
+#, no-wrap
+msgid "% git log -1 hash\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:265
+msgid "To show the log for a single commit with the diff:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:269
+#, no-wrap
+msgid "% git log -1 hash -p\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:272
+msgid ""
+"A one-line summary of each commit alongside a short hash fits more "
+"information on one screen. This can also be configured as an alias for "
+"convenience:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:279
+#, no-wrap
+msgid ""
+"% git log --oneline\n"
+"% git config --global alias.lol \"log --oneline --graph --decorate\"\n"
+"% git lol       # \"log --oneline\" short logs for working branch\n"
+"% git lol --all # for all branches, with fork/merge points visualized\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:282
+msgid ""
+"`git annotate`, or equally `git blame`, shows the most recent commit hash "
+"and who committed that change for each line of a file."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:283
+#, no-wrap
+msgid "Diffs"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:286
+msgid ""
+"git diff displays changes in the working tree, or changes between specified "
+"version hashes. By default staged changes (i.e., in the index) are *not* "
+"shown by `git diff`."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:288
+msgid ""
+"Diffs generated by git are unified and include new files by default in the "
+"diff output."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:290
+msgid "To show differences between the working tree and the index:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:294
+#, no-wrap
+msgid "% git diff\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:297
+msgid ""
+"To show differences between the index and HEAD (the most recent commit on "
+"the branch):"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:301
+#, no-wrap
+msgid "% git diff --cached\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:304
+msgid ""
+"To show differences between the working tree and HEAD, including changes "
+"already staged in the index:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:308
+#, no-wrap
+msgid "% git diff HEAD\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:311
+msgid "To show the commit message and diff for a particular commit:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:315
+#, no-wrap
+msgid "% git show hash\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:318
+msgid "git diff can show the changes between two revisions of the same file:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:322
+#, no-wrap
+msgid "% git diff hash_1..hash_2 -- file\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:325
+msgid ""
+"The paths generated by git diff start with a/ for the original and b/ for "
+"the modified files. They could be applied to the original tree with:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:329
+#, no-wrap
+msgid "% patch -p1 file\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:331
+#, no-wrap
+msgid "Unstaging"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:334
+msgid "Remove the changes in a file from the index:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:338
+#, no-wrap
+msgid "% git reset file\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:341
+msgid ""
+"This works for both changes to an existing file and for new files.  In "
+"either case, the contents of the files are unchanged."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:342
+#, no-wrap
+msgid "Reverting"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:345
+msgid "To revert unstaged changes to a file:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:349
+#, no-wrap
+msgid "% git checkout file\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:352
+msgid "To review and revert some changes to a file:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:356
+#, no-wrap
+msgid "% git checkout -p file\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:359
+msgid ""
+"The above commands can also take a directory and will act on all files under "
+"that path. This can include the whole repository if `.` is given from the "
+"root of the clone. **These commands result in permantent lost of work.** "
+"Confusingly, `git checkout` is also used to switch between branches where it "
+"does not risk dataloss."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:360
+#, no-wrap
+msgid "Branches"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:363
+msgid "To switch between local branches use:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:367
+#, no-wrap
+msgid "% git checkout branch\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:370
+msgid ""
+"If `branch` does not exist but a remote branch you have cloned of the same "
+"name exists a local branch will be created tracking that branch."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:372
+msgid "To create a new branch from your currently checked out branch's state:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:376
+#, no-wrap
+msgid "% git checkout -b newbranch\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:378
+#, no-wrap
+msgid ""
+"XXX: something about merging and rebasing for our no-merge-commits main "
+"branch"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:380
+msgid "see above"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:381
+#, no-wrap
+msgid "Conflicts"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:384
+msgid ""
+"If a git command resulted in a merge conflict, Git will remember which files "
+"have conflicts and refuse to commit any changes to those files until "
+"explicitly told that the conflicts have been resolved."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:386
+msgid ""
+"Conflicts are indicated with ``<<<<<<<`, `=======`, and `>>>>>>>`` markers "
+"in the conflicting file(s). These can be resolved by editing the file:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:392
+#, no-wrap
+msgid ""
+"% vim path/to/conflicting/file\n"
+"% git add path/to/conflicting/file\n"
+"% git commit\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:395
+msgid ""
+"The link:https://git-scm.com/docs/git-mergetool[`git mergetool`] command can "
+"be used to manage the conflict resolution process, relying on a third-party "
+"3-way merge tool such as kdiff3, vimdiff3, or p4merge."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:396
+#, no-wrap
+msgid "Advanced Use"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:398
+#, no-wrap
+msgid "Sparse Checkouts"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:401
+msgid ""
+"XXX to be written - see the "
+"link:https://git-scm.com/docs/git-sparse-checkout[git-sparse-checkout] "
+"documentation."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:402
+#, no-wrap
+msgid "Direct Operation"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:405
+msgid ""
+"Certain operations can be performed directly on the repository without "
+"touching the working copy. Specifically, this applies to any operation that "
+"does not require editing a file, including:"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:406
+#, no-wrap
+msgid "Merging with git"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:409
+msgid ""
+"This section deals with merging code from one branch to another (typically, "
+"from head to a stable branch)."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:410
+#, no-wrap
+msgid "Vendor Imports with git"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:413 documentation/content/en/articles/git-primer/_index.adoc:571
+#, no-wrap
+msgid "XXX TODO"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:415
+msgid "Important:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:417
+msgid "Please read this entire section before starting a vendor import."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:419
+msgid "Note:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:421
+msgid "Patches to vendor code fall into two categories:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:423
+msgid ""
+"Vendor patches: these are patches that have been issued by the vendor, or "
+"that have been extracted from the vendor's version control system, which "
+"address issues which cannot wait until the next vendor release."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:424
+msgid ""
+"FreeBSD patches: these are patches that modify the vendor code to address "
+"FreeBSD-specific issues."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:426
+msgid "The nature of a patch dictates where it should be committed:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:428
+msgid ""
+"Vendor patches must be committed to the vendor branch, and merged from there "
+"to head. If the patch addresses an issue in a new release that is currently "
+"being imported, it must not be committed along with the new release: the "
+"release must be imported and tagged first, then the patch can be applied and "
+"committed. There is no need to re-tag the vendor sources after committing "
+"the patch."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:429
+msgid "FreeBSD patches are committed directly to head."
+msgstr ""
+
+#. type: Title ====
+#: documentation/content/en/articles/git-primer/_index.adoc:430
+#, no-wrap
+msgid "Preparing the Tree"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:433
+msgid ""
+"If importing for the first time after the switch to Git, bootstrapping the "
+"merge history in the main tree is necessary."
+msgstr ""
+
+#. type: Title =====
+#: documentation/content/en/articles/git-primer/_index.adoc:434
+#, no-wrap
+msgid "Bootstrapping Merge History"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:437
+msgid ""
+"If importing for the first time after the switch to Git, bootstrap "
+"svn:mergeinfo on the target directory in the main tree to the revision that "
+"corresponds to the last related change to the vendor tree, prior to "
+"importing new sources:"
+msgstr ""
+
+#. type: Title ====
+#: documentation/content/en/articles/git-primer/_index.adoc:438
+#, no-wrap
+msgid "Importing New Sources"
+msgstr ""
+
+#. type: Title ====
+#: documentation/content/en/articles/git-primer/_index.adoc:440
+#, no-wrap
+msgid "Merging to Head"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:447
+#, no-wrap
+msgid ""
+"% cd head/contrib/pf\n"
+"% svn up\n"
+"% svn merge --accept=postpone svn+ssh://repo.freebsd.org/base/vendor/pf/dist "
+".\n"
+msgstr ""
+
+#. type: Title ====
+#: documentation/content/en/articles/git-primer/_index.adoc:449
+#, no-wrap
+msgid "Committing the Vendor Import"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:452
+msgid ""
+"Committing is now possible! Everything must be committed in one go. If done "
+"properly, the tree will move from a consistent state with old code, to a "
+"consistent state with new code."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:453
+#, no-wrap
+msgid "Using a Git Mirror"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:455
+#, no-wrap
+msgid "Committing High-ASCII Data"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:457
+#, no-wrap
+msgid "Some Tips"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:460
+msgid ""
+"When referring to other commits in prose (commit messages and such), specify "
+"the first 12 characters of the associated Git hash (e.g. “f3c8503082ea”)."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:461
+#, no-wrap
+msgid "Collaboration Workflow"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:464
+msgid ""
+"Now that we've covered how to work with, and commit, directly to the FreeBSD "
+"repositories we can address the concept of a collaboration workflow. When "
+"working directly on the repository your changes are only visible once they "
+"are committed to the ```main``` branch, but what if you want to work on some "
+"feature for a long period, and share it with others inside and outside the "
+"FreeBSD community? A collaboration workflow allows you to have your own, "
+"publicly hosted, long lived, development branches that others can share in."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:466
+msgid ""
+"To set up a collaboration branch you will need to work with two different "
+"repositories in parallel, the canonical FreeBSD repos that we've been "
+"describing thus far, and your own, hosted repository, which is where your "
+"development branches will live. The following examples use github for the "
+"hosted repository, but the same effect can be achieved with a GitLab "
+"instance, or your own, personally hosted, git."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:468
+msgid "The steps required to set up a collaboration workflow are the following:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:470
+msgid "Clone the FreeBSD repository"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:471
+msgid "Create a publicly visible repository"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:472
+msgid "Push your cloned FreeBSD repo into your public repo."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:473
+msgid "Create branches locally"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:474
+msgid "Push shared branches to your public repo."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:476
+msgid ""
+"Note that pushing new branches to the FreeBSD repo is forbidden, and "
+"attempts to push a developer branch will result in an error."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:478
+msgid ""
+"When we clone the FreeBSD repo we have a copy of the repo on our local "
+"system. The clone has a single ```remote``` which is where all updates come "
+"from:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:484
+#, no-wrap
+msgid ""
+"> git remote -v\n"
+"origin\thttps://cgit-beta.freebsd.org/src.git (fetch)\n"
+"origin\thttps://cgit-beta.freebsd.org/src.git (push)\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:487
+msgid "The ```origin``` remote is set by git when you clone the repo."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:489
+msgid ""
+"Now you have to create your collaboration space, which can be done by "
+"creating a new, empty, repository on github. For this example I have "
+"created:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:493
+#, no-wrap
+msgid "git@github.com:gvnn3/FreeBSD.src-gnn.git\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:496
+msgid "using the standard github web UI."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:498
+msgid "For convenience we rename origin to ```freebsd```:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:505
+#, no-wrap
+msgid ""
+"> git remote rename origin freebsd\n"
+"> git remote -v\n"
+"freebsd\thttps://cgit-beta.freebsd.org/src.git (fetch)\n"
+"freebsd\thttps://cgit-beta.freebsd.org/src.git (push)\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:508
+msgid "Next we'll add our collaboration repo as a secondary remote:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:512
+#, no-wrap
+msgid "> git remote add public git@github.com:gvnn3/FreeBSD.src-gnn.git\n"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:518
+#, no-wrap
+msgid ""
+"> git remote -v\n"
+"freebsd\thttps://cgit-beta.freebsd.org/src.git (fetch)\n"
+"freebsd\thttps://cgit-beta.freebsd.org/src.git (push)\n"
+"public\tgit@github.com:gvnn3/FreeBSD.src-gnn.git (fetch)\n"
+"public\tgit@github.com:gvnn3/FreeBSD.src-gnn.git (push)\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:521
+msgid ""
+"Now we have a ```freebsd``` remote from which we mostly receive updates, and "
+"where we ONLY commit changes to ```main``` or bring changes from ```main``` "
+"to one of the ```STABLE``` branches."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:523
+msgid "Finally we push the FreeBSD repo into our empty, public, repository."
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:527
+#, no-wrap
+msgid "> git push public\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:530
+msgid ""
+"Now that you have a public collaboration space you can create and push "
+"branches to it for others to see and enjoy.  First we create our local "
+"branch to work in:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:536
+#, no-wrap
+msgid ""
+"> git branch gnn-test\n"
+"> git checkout gnn-test\n"
+"Switched to branch 'gnn-test'\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:539
+msgid "and then we push that branch into our `public` space:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:553
+#, no-wrap
+msgid ""
+"> git push --set-upstream public gnn-test\n"
+"Warning: No xauth data; using fake authentication data for X11 forwarding.\n"
+"X11 forwarding request failed on channel 0\n"
+"Total 0 (delta 0), reused 0 (delta 0)\n"
+"remote:\n"
+"remote: Create a pull request for 'gnn-test' on GitHub by visiting:\n"
+"remote:      https://github.com/gvnn3/FreeBSD.src-gnn/pull/new/gnn-test\n"
+"remote:\n"
+"To github.com:gvnn3/FreeBSD.src-gnn.git\n"
+" * [new branch]              gnn-test -> gnn-test\n"
+"Branch 'gnn-test' set up to track remote branch 'gnn-test' from 'public'.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:556
+msgid ""
+"Updating your working branch requires that you rebase from the `freebsd` "
+"repo.  First we'll fetch all the changes from the repo but NOT apply them:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:560
+#, no-wrap
+msgid "> git fetch freebsd\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:563
+msgid "and then we will apply the changes to the main branch via a rebase:"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:569
+#, no-wrap
+msgid ""
+"> git checkout master\n"
+"git rebase freebsd/master\n"
+"First, rewinding head to replay your work on top of it...\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:573
+msgid "(Notes here for updates we need)"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/articles/git-primer/_index.adoc:573
+#, no-wrap
+msgid "mention worktrees"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:576
+msgid "create a worktree for a project branch"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:580
+#, no-wrap
+msgid "% git worktree add -b pkgbase ../pkgbase upstream/main\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:583
+msgid "example for a stable/12 worktree"
+msgstr ""
+
+#. type: delimited block .
+#: documentation/content/en/articles/git-primer/_index.adoc:587
+#, no-wrap
+msgid "% git worktree add -b stable/12 ../stable-12 upstream/stable/12\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/git-primer/_index.adoc:589
+#, no-wrap
+msgid "Useful links"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/git-primer/_index.adoc:590
+msgid "https://stackoverflow.com/questions/1587846/how-do-i-show-the-changes-which-have-been-staged"
+msgstr ""

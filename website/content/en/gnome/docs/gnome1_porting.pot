@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 16:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: website/content/en/gnome/docs/gnome1_porting.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/gnome/docs/gnome1_porting.adoc:5
+msgid "title: \"FreeBSD GNOME Project: GNOME 1 Components\" sidenav: gnome ---"
+msgstr ""
+
+#. type: Title =
+#: website/content/en/gnome/docs/gnome1_porting.adoc:6
+#, no-wrap
+msgid "FreeBSD GNOME Project: GNOME 1 Components"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/gnome/docs/gnome1_porting.adoc:9
+msgid ""
+"To see how to utilize these components, please examine the "
+"link:../example-makefile/[example Makefile]."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/gnome/docs/gnome1_porting.adoc:34
+msgid ""
+"|=== |*COMPONENT* |*ASSOCIATED PROGRAM* |*IMPLIED COMPONENTS* |bonobo "
+"|devel/bonobo |oaf gnomeprint |gal |x11-toolkits/gal |libglade |gconf "
+"|devel/gconf |oaf |gdkpixbuf |graphics/gdk-pixbuf |gtk12 |glib12 "
+"|devel/glib12 |pkgconfig |gnomecanvas |graphics/gnomecanvas |gnomelibs "
+"gdkpixbuf |gnomedb |databases/gnome-db |libgda |gnomelibs |x11/gnome-libs "
+"|esound imlib libxml orbit |gnomeprint |print/gnome-print |gnomelibs "
+"gnomecanvas |gnomevfs |devel/gnome-vfs1 |gnomemimedata gconf gnomelibs "
+"|gtk12 |x11-toolkits/gtk12 |glib12 |imlib |graphics/imlib |gtk12 |libgda "
+"|databases/libgda |gconf bonobo |libghttp |www/libghttp | |libglade "
+"|devel/libglade |gnomedb |libxml |textproc/libxml |glib12 |oaf |devel/oaf "
+"|orbit libxml |orbit |devel/ORBit |glib12 |pygtk |x11-toolkits/py-gtk "
+"|gnomelibs gdkpixbuf libglade |==="
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/gnome/docs/gnome1_porting.adoc:35
+msgid ""
+"If you still need help with your port, have a look at some of the existing "
+"ports for examples. The link:mailto:freebsd-gnome@FreeBSD.org[freebsd-gnome "
+"mailing list] is also there for you."
+msgstr ""

@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 15:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:5
+#, no-wrap
+msgid ""
+"title: Contributors to FreeBSD\n"
+"releaseinfo: \"$FreeBSD$\" \n"
+"trademarks: [\"freebsd\", \"sun\", \"general\"]\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/articles/contributors/_index.adoc:7
+#, no-wrap
+msgid "Contributors to FreeBSD"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:22
+msgid "Abstract"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:24
+msgid ""
+"This article lists individuals and organizations who have made a "
+"contribution to FreeBSD."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:26
+msgid "'''"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:28
+msgid "toc::[]"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:30
+#, no-wrap
+msgid "Donors Gallery"
+msgstr ""
+
+#. type: delimited block =
+#: documentation/content/en/articles/contributors/_index.adoc:35
+msgid ""
+"As of 2010, the following section is several years out-of-date. Donations "
+"from the past several years appear "
+"https://www.FreeBSD.org/donations/donors/[here]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:38
+msgid ""
+"The FreeBSD Project is indebted to the following donors and would like to "
+"publicly thank them here!"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:41
+msgid ""
+"_Contributors to the central server project:_ The following individuals and "
+"businesses made it possible for the FreeBSD Project to build a new central "
+"server machine, which has replaced `freefall.FreeBSD.org` at one point, by "
+"donating the following items:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:47
+#, no-wrap
+msgid ""
+"** {mbarkah} and his employer, http://www.hemi.com/[ Hemisphere Online], "
+"donated a _Pentium Pro (P6) 200MHz CPU_\n"
+"** http://www.asacomputers.com/[ASA Computers] donated a _Tyan 1662 "
+"motherboard_.\n"
+"** Joe McGuckin mailto:joe@via.net[joe@via.net] of "
+"http://www.via.net/[ViaNet Communications] donated a _Kingston ethernet "
+"controller._\n"
+"** Jack O'Neill mailto:jack@diamond.xtalwind.net[jack@diamond.xtalwind.net] "
+"donated an _NCR 53C875 SCSI controller card_.\n"
+"** Ulf Zimmermann mailto:ulf@Alameda.net[ulf@Alameda.net] of "
+"http://www.Alameda.net/[Alameda Networks] donated _128MB of memory_, a _4 Gb "
+"disk drive and the case._\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:49
+msgid "_Direct funding:_"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:51
+msgid ""
+"  The following individuals and businesses have generously contributed "
+"direct funding to the project:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:73
+#, no-wrap
+msgid ""
+"** Annelise Anderson "
+"mailto:ANDRSN@HOOVER.STANFORD.EDU[ANDRSN@HOOVER.STANFORD.EDU]\n"
+"** {dillon}\n"
+"** http://www.bluemountain.com/[Blue Mountain Arts]\n"
+"** http://www.epilogue.com/[Epilogue Technology Corporation]\n"
+"** {sef}\n"
+"** http://www.gta.com/[Global Technology Associates, Inc]\n"
+"** Don Scott Wilde\n"
+"** Gianmarco Giovannelli mailto:gmarco@masternet.it[gmarco@masternet.it]\n"
+"** Josef C. Grosch mailto:joeg@truenorth.org[joeg@truenorth.org]\n"
+"** Robert T. Morris\n"
+"** {chuckr}\n"
+"** Kenneth P. Stox mailto:ken@stox.sa.enteract.com[ken@stox.sa.enteract.com] "
+"of http://www.imagescape.com/[Imaginary Landscape, LLC.]\n"
+"** Dmitry S. Kohmanyuk mailto:dk@dog.farm.org[dk@dog.farm.org]\n"
+"** http://www.cdrom.co.jp/[Laser5] of Japan (a portion of the profits from "
+"sales of their various FreeBSD CDROMs).\n"
+"** http://www.mmjp.or.jp/fuki/[Fuki Shuppan Publishing Co.] donated a "
+"portion of their profits from _Hajimete no FreeBSD_ (FreeBSD, Getting "
+"started) to the FreeBSD and XFree86 projects.\n"
+"** http://www.ascii.co.jp/[ASCII Corp.] donated a portion of their profits "
+"from several FreeBSD-related books to the FreeBSD project.\n"
+"** http://www.yokogawa.co.jp/[Yokogawa Electric Corp] has generously donated "
+"significant funding to the FreeBSD project.\n"
+"** http://www.buffnet.net/[BuffNET]\n"
+"** http://www.pacificsolutions.com/[Pacific Solutions]\n"
+"** http://www.siemens.de/[Siemens AG] via Andre Albsmeier "
+"mailto:andre.albsmeier@mchp.siemens.de[andre.albsmeier@mchp.siemens.de]\n"
+"** Chris Silva mailto:ras@interaccess.com[ras@interaccess.com]\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:75
+msgid "_Hardware contributors:_"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:77
+msgid ""
+"  The following individuals and businesses have generously contributed "
+"hardware for testing and device driver development/support:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:89
+#, no-wrap
+msgid ""
+"** BSDi for providing the Pentium P5-90 and 486/DX2-66 EISA/VL systems that "
+"are being used for our development work, to say nothing of the network "
+"access and other donations of hardware resources.\n"
+"** http://www.compaq.com[Compaq] has donated a variety of Alpha systems to "
+"the FreeBSD Project. Among the many generous donations are 4 AlphaStation "
+"DS10s, an AlphaServer DS20, AlphaServer 2100s, an AlphaServer 4100, 8 500Mhz "
+"Personal Workstations, 4 433Mhz Personal Workstations, and more! These "
+"machines are used for release engineering, package building, SMP "
+"development, and general development on the Alpha architecture.\n"
+"** TRW Financial Systems, Inc. provided 130 PCs, three 68 GB file servers, "
+"twelve Ethernets, two routers and an ATM switch for debugging the diskless "
+"code.\n"
+"** Dermot McDonnell donated the Toshiba XM3401B CDROM drive currently used "
+"in freefall.\n"
+"** Chuck Robey mailto:chuckr@glue.umd.edu[chuckr@glue.umd.edu] contributed "
+"his floppy tape streamer for experimental work.\n"
+"** Larry Altneu mailto:larry@ALR.COM[larry@ALR.COM], and {wilko}, provided "
+"Wangtek and Archive QIC-02 tape drives in order to improve the "
+"[.filename]#wt# driver.\n"
+"** Ernst Winter (http://berklix.org/ewinter/[Deceased]) contributed a 2.88 "
+"MB floppy drive to the project. This will hopefully increase the pressure "
+"for rewriting the floppy disk driver.\n"
+"** http://www.tekram.com/[Tekram Technologies] sent one each of their "
+"DC-390, DC-390U and DC-390F FAST and ULTRA SCSI host adapter cards for "
+"regression testing of the NCR and AMD drivers with their cards. They are "
+"also to be applauded for making driver sources for free operating systems "
+"available from their FTP server "
+"link:ftp://ftp.tekram.com/scsi/FreeBSD/[ftp://ftp.tekram.com/scsi/FreeBSD/].\n"
+"** Larry M. Augustin contributed not only a Symbios Sym8751S SCSI card, but "
+"also a set of data books, including one about the forthcoming Sym53c895 chip "
+"with Ultra-2 and LVD support, and the latest programming manual with "
+"information on how to safely use the advanced features of the latest Symbios "
+"SCSI chips. Thanks a lot!\n"
+"** {kuku} donated an FX120 12 speed Mitsumi CDROM drive for IDE CDROM driver "
+"development.\n"
+"** Mike Tancsa mailto:mike@sentex.ca[mike@sentex.ca] donated four various "
+"ATM PCI cards in order to help increase support of these cards as well as "
+"help support the development effort of the netatm ATM stack.\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:91
+msgid "_Special contributors:_"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:95
+#, no-wrap
+msgid ""
+"** http://www.osd.bsdi.com/[BSDi] (formerly Walnut Creek CDROM) has donated "
+"almost more than we can say (see the 'About the FreeBSD Project' section of "
+"the link:{handbook}[FreeBSD Handbook] for more details). In particular, we "
+"would like to thank them for the original hardware used for "
+"`freefall.FreeBSD.org`, our primary development machine, and for "
+"`thud.FreeBSD.org`, a testing and build box. We are also indebted to them "
+"for funding various contributors over the years and providing us with "
+"unrestricted use of their T1 connection to the Internet.\n"
+"** The http://www.interface-business.de/[interface business GmbH, Dresden] "
+"has been patiently supporting {joerg} who has often preferred FreeBSD work "
+"over paid work, and used to fall back to their (quite expensive) EUnet "
+"Internet connection whenever his private connection became too slow or flaky "
+"to work with it...\n"
+"** http://www.bsdi.com/[Berkeley Software Design, Inc.] has contributed "
+"their DOS emulator code to the remaining BSD world, which is used in the "
+"_doscmd_ command.\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:97
+#, no-wrap
+msgid "The FreeBSD Developers"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:100
+msgid ""
+"These are the people who have commit privileges and do the engineering work "
+"on the FreeBSD source tree. All core team members are also developers."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:102
+msgid "(in alphabetical order by last name):"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:106
+#, no-wrap
+msgid "Core Team Alumni"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:109
+msgid ""
+"The following people were members of the FreeBSD core team during the "
+"periods indicated. We thank them for their past efforts in the service of "
+"the FreeBSD project."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:111 documentation/content/en/articles/contributors/_index.adoc:120 documentation/content/en/articles/contributors/_index.adoc:129
+msgid "_In rough reverse chronological order:_"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:115
+#, no-wrap
+msgid "Development Team Alumni"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:118
+msgid ""
+"The following people were members of the FreeBSD development team during the "
+"periods indicated. We thank them for their past efforts in the service of "
+"the FreeBSD project."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:124
+#, no-wrap
+msgid "Ports Management Team Alumni"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:127
+msgid ""
+"The following people were members of the FreeBSD portmgr team during the "
+"periods indicated. We thank them for their past efforts in the service of "
+"the FreeBSD project."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:133
+#, no-wrap
+msgid "Development Team: In Memoriam"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:136
+msgid ""
+"During the many years that the FreeBSD Project has been in existence, sadly, "
+"some of our developers have passed away. Here are some remembrances."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:138
+msgid "_In rough reverse chronological order of their passing:_"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:142
+#, no-wrap
+msgid "Derived Software Contributors"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:145
+msgid ""
+"This software was originally derived from William F. Jolitz's 386BSD release "
+"0.1, though almost none of the original 386BSD specific code remains. This "
+"software has been essentially re-implemented from the 4.4BSD-Lite release "
+"provided by the Computer Science Research Group (CSRG) at the University of "
+"California, Berkeley and associated academic contributors."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:147
+msgid ""
+"There are also portions of NetBSD and OpenBSD that have been integrated into "
+"FreeBSD as well, and we would therefore like to thank all the contributors "
+"to NetBSD and OpenBSD for their work."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:149
+#, no-wrap
+msgid "Additional FreeBSD Contributors"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/articles/contributors/_index.adoc:152 documentation/content/en/articles/contributors/_index.adoc:159
+msgid "(in alphabetical order by first name):"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/articles/contributors/_index.adoc:156
+#, no-wrap
+msgid "386BSD Patch Kit Patch Contributors"
+msgstr ""

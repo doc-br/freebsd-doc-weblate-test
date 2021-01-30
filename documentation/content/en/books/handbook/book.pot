@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 15:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:4
+msgid "title: FreeBSD Handbook authors:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:8
+#, no-wrap
+msgid ""
+"author: The FreeBSD Documentation Project\n"
+"copyright: 1995-2021 The FreeBSD Documentation Project\n"
+"releaseinfo: \"$FreeBSD$\" \n"
+"trademarks: [\"freebsd\", \"ibm\", \"ieee\", \"redhat\", \"3com\", "
+"\"adobe\", \"apple\", \"intel\", \"linux\", \"microsoft\", \"opengroup\", "
+"\"sun\", \"realnetworks\", \"oracle\", \"3ware\", \"arm\", \"adaptec\", "
+"\"google\", \"heidelberger\", \"intuit\", \"lsilogic\", \"themathworks\", "
+"\"thomson\", \"vmware\", \"wolframresearch\", \"xiph\", \"xfree86\", "
+"\"general\"] \n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/books/handbook/book.adoc:10
+#, no-wrap
+msgid "FreeBSD Handbook"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:31
+msgid "ifeval::[\"{backend}\" == \"html5\"]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:39 documentation/content/en/books/handbook/book.adoc:49 documentation/content/en/books/handbook/book.adoc:59
+msgid "endif::[]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:41
+msgid "ifeval::[\"{backend}\" == \"pdf\"]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:51
+msgid "ifeval::[\"{backend}\" == \"epub3\"]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:63
+msgid "Abstract"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:65
+msgid ""
+"Welcome to FreeBSD! This handbook covers the installation and day to day use "
+"of _FreeBSD {rel122-current}-RELEASE_, _FreeBSD {rel121-current}-RELEASE_ "
+"and _FreeBSD {rel114-current}-RELEASE_. This book is the result of ongoing "
+"work by many individuals. Some sections might be outdated. Those interested "
+"in helping to update and expand this document should send email to the "
+"{freebsd-doc}."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:67
+msgid ""
+"The latest version of this book is available from the "
+"https://www.FreeBSD.org/[FreeBSD web site]. Previous versions can be "
+"obtained from "
+"https://docs.FreeBSD.org/doc/[https://docs.FreeBSD.org/doc/]. The book can "
+"be downloaded in a variety of formats and compression options from the "
+"https://download.freebsd.org/ftp/doc/[FreeBSD FTP server] or one of the "
+"numerous crossref:mirrors[mirrors-ftp,mirror sites]. Printed copies can be "
+"purchased at the https://www.freebsdmall.com/[FreeBSD Mall]. Searches can be "
+"performed on the handbook and other documents on the "
+"link:https://www.FreeBSD.org/search/[search page]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:69
+msgid "'''"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/book.adoc:71
+msgid "toc::[]"
+msgstr ""

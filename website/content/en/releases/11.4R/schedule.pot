@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 16:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:4
+#, no-wrap
+msgid ""
+"title: \"FreeBSD 11.4 Release Process\"\n"
+"sidenav: download\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: website/content/en/releases/11.4R/schedule.adoc:12
+#, no-wrap
+msgid "FreeBSD {localRel} Release Process"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/releases/11.4R/schedule.adoc:14
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:17
+msgid ""
+"This is the release schedule for FreeBSD {localRel}. For more information "
+"about the release engineering process, please see the "
+"link:../../../releng/[Release Engineering] section of the web site."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:19
+msgid ""
+"General discussions about the pending release and known issues should be "
+"sent to the public mailto:FreeBSD-current@FreeBSD.org[freebsd-current] "
+"mailing list. link:{handbook}#mfc-glossary[MFC] requests are no longer being "
+"accepted for {localBranchReleng}."
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/releases/11.4R/schedule.adoc:20
+#, no-wrap
+msgid "Schedule"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:23
+msgid ""
+"During the {localBranchHead} freeze, the Release Engineering Team may create "
+"ALPHA snapshots to publish for testing purposes. As the frequency and total "
+"number of the ALPHA snapshots will depend on the length of time the "
+"{localBranchHead} branch is frozen, no official schedule is provided."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:25
+msgid ""
+"Announcements regarding the availability of the ALPHA snapshots will be sent "
+"to the mailto:freebsd-current@FreeBSD.org[freebsd-current] and "
+"mailto:freebsd-snapshots@FreeBSD.org[freebsd-snapshots] mailing lists."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:42
+msgid ""
+"|=== |Action |Expected |Actual |Description |Initial release schedule "
+"announcement |- |3 January 2020 |Release Engineers send announcement email "
+"to developers with a rough schedule.  |Release schedule reminder |20 March "
+"2020 |20 March 2020 |Release Engineers send reminder announcement e-mail to "
+"developers with updated schedule.  |Code slush begins |24 April 2020 |24 "
+"April 2020 |Release Engineers announce that all further commits to the "
+"{localBranchStable} branch will not require explicit approval, however new "
+"features should be avoided.  |{localBranchReleng} branch |8 May 2020 |8 May "
+"2020 |Subversion branch created; future release engineering proceeds on this "
+"branch.  |BETA1 builds begin |8 May 2020 |8 May 2020 |First beta test "
+"snapshot.  |BETA2 builds begin |15 May 2020 |15 May 2020 |Second beta test "
+"snapshot.  |RC1 builds begin |22 May 2020 |22 May 2020 |First release "
+"candidate.  |RC2 builds begin |29 May 2020 |29 May 2020 |Second release "
+"candidate.  |RELEASE builds begin |12 June 2020 |12 June 2020 "
+"|{localRel}-RELEASE builds begin.  |RELEASE announcement |16 June 2020 |16 "
+"June 2020 |{localRel}-RELEASE press release.  |Turn over to the secteam |- "
+"|22 June 2020 |{localBranchReleng} branch is handed over to the FreeBSD "
+"Security Officer Team in one or two weeks after the announcement.  |==="
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:44
+msgid "\"*\" indicates \"as-needed\" items."
+msgstr ""
+
+#. == Status / TODO
+#. link:todo/[FreeBSD Release Engineering TODO Page]
+#. type: Title ==
+#: website/content/en/releases/11.4R/schedule.adoc:50
+#, no-wrap
+msgid "Additional Information"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/11.4R/schedule.adoc:52
+msgid "link:../../../releng/[FreeBSD Release Engineering website]"
+msgstr ""
