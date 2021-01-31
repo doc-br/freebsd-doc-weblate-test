@@ -67,7 +67,9 @@ for resource in $RESOURCES; do
 
 		if [ ! -L "$dirbase/$name.po" ]; then
 			# Necessary for Weblate https://github.com/WeblateOrg/weblate/issues/2084
-			ln -s "$dirbase/$name.pot" "$dirbase/$name.po"
+			cd "$dirbase/" || exit
+			ln -s "$name.pot" "$name.po"
+			cd - || exit
 		fi
 	done
 done

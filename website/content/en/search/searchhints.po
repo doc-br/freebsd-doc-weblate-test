@@ -1,0 +1,1 @@
+searchhints.pot
