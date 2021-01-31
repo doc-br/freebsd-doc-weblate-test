@@ -64,6 +64,11 @@ for resource in $RESOURCES; do
 				--package-name "FreeBSD Documentation" \
 				--po "$dirbase/$name.pot"
 		fi
+
+		if [ ! -L "$dirbase/$name.po" ]; then
+			# Necessary for Weblate https://github.com/WeblateOrg/weblate/issues/2084
+			ln -s "$dirbase/$name.pot" "$dirbase/$name.po"
+		fi
 	done
 done
 
