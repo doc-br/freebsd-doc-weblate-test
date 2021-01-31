@@ -1,0 +1,1074 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 16:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: website/content/en/where.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:4
+#, no-wrap
+msgid ""
+"title: \"Download FreeBSD\"\n"
+"sidenav: download\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: website/content/en/where.adoc:12
+#, no-wrap
+msgid "Download FreeBSD"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:16
+#, no-wrap
+msgid "Choosing an Architecture"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:19
+msgid ""
+"Most users of FreeBSD will have hardware for either the amd64, i386, or "
+"armv6 architectures."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:21
+msgid ""
+"Modern PCs use the amd64 architecture, including those with Intel® branded "
+"processors. Computers with more than 3 GB of memory should use amd64. If the "
+"computer is an older, 32-bit only model, use i386. For embedded devices and "
+"single-board computers (SBC) such as the Raspberry Pi, Beagle Bone Black, "
+"Panda Board, and Zed Board, use the armv6 SD card image which supports ARMv6 "
+"and ARMv7 processors."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:23
+msgid ""
+"All other users should reference the link:../platforms/[complete list] of "
+"supported FreeBSD platforms."
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:25
+#, no-wrap
+msgid "Choosing an Image"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:28
+msgid ""
+"The FreeBSD installer can be downloaded in a number of different formats "
+"including CD (disc1), DVD (dvd1), and Network Install (bootonly) sized ISO "
+"Disc Images, as well as regular and mini USB memory stick images. Recent "
+"versions of FreeBSD are also offered as prebuilt expandable Virtual Machine "
+"images, and as SD Card images for embedded platforms."
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:30
+#, no-wrap
+msgid "FreeBSD Deployment Statistics"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:33
+msgid ""
+"While FreeBSD does not gather deployment statistics, having statistical "
+"information available is essential. Please consider installing the "
+"https://www.freshports.org/sysutils/bsdstats/[sysutils/bsdstats] package, "
+"which collects hardware and software statistics, helping developers "
+"understand how to best focus their efforts. The information collected is "
+"available at the http://bsdstats.org[bsdstats.org] website."
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:36
+#, no-wrap
+msgid "FreeBSD {rel122-current}-RELEASE"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:44 website/content/en/where.adoc:92 website/content/en/where.adoc:141 website/content/en/where.adoc:188 website/content/en/where.adoc:232 website/content/en/where.adoc:275
+msgid ""
+"|=== |Installer Images |Virtual Machine Images |SD Card Images "
+"|Documentation a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:45
+msgid "link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel122-current}/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:46
+msgid "link:{url-rel}/i386/i386/ISO-IMAGES/{rel122-current}/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:47
+msgid "link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel122-current}/[powerpc]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:48
+msgid "link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel122-current}/[powerpc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:49
+msgid "link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel122-current}/[powerpcspe]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:50
+msgid "link:{url-rel}/sparc64/sparc64/ISO-IMAGES/{rel122-current}/[sparc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:51
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel122-current}/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:53 website/content/en/where.adoc:59 website/content/en/where.adoc:73 website/content/en/where.adoc:101 website/content/en/where.adoc:107 website/content/en/where.adoc:122 website/content/en/where.adoc:149 website/content/en/where.adoc:155 website/content/en/where.adoc:165 website/content/en/where.adoc:200 website/content/en/where.adoc:206 website/content/en/where.adoc:220 website/content/en/where.adoc:243 website/content/en/where.adoc:248 website/content/en/where.adoc:263 website/content/en/where.adoc:284 website/content/en/where.adoc:289 website/content/en/where.adoc:299
+msgid "a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:54 website/content/en/where.adoc:102 website/content/en/where.adoc:150
+msgid "link:{url-rel}/VM-IMAGES/README.txt[README]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:55
+msgid "link:{url-rel}/VM-IMAGES/{rel122-current}-RELEASE/amd64/Latest/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:56
+msgid "link:{url-rel}/VM-IMAGES/{rel122-current}-RELEASE/i386/Latest/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:57
+msgid "link:{url-rel}/VM-IMAGES/{rel122-current}-RELEASE/aarch64/Latest/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:60
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv6-RPI-B.img.xz[RPI-B]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:61
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-BANANAPI.img.xz[BANANAPI]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:62
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-CUBIEBOARD.img.xz[CUBIEBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:63
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-CUBIEBOARD2.img.xz[CUBIEBOARD2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:64
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-CUBOX-HUMMINGBOARD.img.xz[CUBOX-HUMMINGBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:65
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-GENERICSD.img.xz[GENERICSD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:66
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-RPI2.img.xz[RPI2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:67
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-PANDABOARD.img.xz[PANDABOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:68
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm-armv7-WANDBOARD.img.xz[WANDBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:69
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm64-aarch64-PINE64.img.xz[PINE64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:70
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm64-aarch64-PINE64-LTS.img.xz[PINE64-LTS]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:71
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel122-current}/FreeBSD-{rel122-current}-RELEASE-arm64-aarch64-RPI3.img.xz[RPI3]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:74
+msgid "link:../releases/#current[Released]: {rel122-current-date}"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:75
+msgid "link:{u-rel122-notes}[Release Notes]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:76
+msgid "link:{u-rel122-readme}[Readme]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:77
+msgid "link:{u-rel122-hardware}[Hardware Compatibility List]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:78
+msgid "link:{u-rel122-installation}[Installation Instructions]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:79
+msgid "link:{u-rel122-errata}[Errata]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:80
+msgid "link:{u-rel122-signatures}[Signed Checksums]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:82 website/content/en/where.adoc:131 website/content/en/where.adoc:174 website/content/en/where.adoc:223 website/content/en/where.adoc:266 website/content/en/where.adoc:302
+msgid "|==="
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:84
+#, no-wrap
+msgid "FreeBSD {rel121-current}-RELEASE"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:93
+msgid "link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel121-current}/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:94
+msgid "link:{url-rel}/i386/i386/ISO-IMAGES/{rel121-current}/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:95
+msgid "link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel121-current}/[powerpc]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:96
+msgid "link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel121-current}/[powerpc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:97
+msgid "link:{url-rel}/powerpc/powerpcspe/ISO-IMAGES/{rel121-current}/[powerpcspe]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:98
+msgid "link:{url-rel}/sparc64/sparc64/ISO-IMAGES/{rel121-current}/[sparc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:99
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel121-current}/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:103
+msgid "link:{url-rel}/VM-IMAGES/{rel121-current}-RELEASE/amd64/Latest/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:104
+msgid "link:{url-rel}/VM-IMAGES/{rel121-current}-RELEASE/i386/Latest/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:105
+msgid "link:{url-rel}/VM-IMAGES/{rel121-current}-RELEASE/aarch64/Latest/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:108
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv6-RPI-B.img.xz[RPI-B]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:109
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-BANANAPI.img.xz[BANANAPI]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:110
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-BEAGLEBONE.img.xz[BEAGLEBONE]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:111
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-CUBIEBOARD.img.xz[CUBIEBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:112
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-CUBIEBOARD2.img.xz[CUBIEBOARD2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:113
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-CUBOX-HUMMINGBOARD.img.xz[CUBOX-HUMMINGBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:114
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-GENERICSD.img.xz[GENERICSD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:115
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-RPI2.img.xz[RPI2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:116
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-PANDABOARD.img.xz[PANDABOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:117
+msgid "link:{url-rel}/arm/armv7/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm-armv7-WANDBOARD.img.xz[WANDBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:118
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm64-aarch64-PINE64.img.xz[PINE64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:119
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm64-aarch64-PINE64-LTS.img.xz[PINE64-LTS]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:120
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel121-current}/FreeBSD-{rel121-current}-RELEASE-arm64-aarch64-RPI3.img.xz[RPI3]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:123
+msgid "link:../releases/#current[Released]: {rel121-current-date}"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:124
+msgid "link:{u-rel121-notes}[Release Notes]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:125
+msgid "link:{u-rel121-readme}[Readme]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:126
+msgid "link:{u-rel121-hardware}[Hardware Compatibility List]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:127
+msgid "link:{u-rel121-installation}[Installation Instructions]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:128
+msgid "link:{u-rel121-errata}[Errata]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:129
+msgid "link:{u-rel121-signatures}[Signed Checksums]"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:133
+#, no-wrap
+msgid "FreeBSD {rel114-current}-RELEASE"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:142
+msgid "link:{url-rel}/amd64/amd64/ISO-IMAGES/{rel114-current}/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:143
+msgid "link:{url-rel}/i386/i386/ISO-IMAGES/{rel114-current}/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:144
+msgid "link:{url-rel}/powerpc/powerpc/ISO-IMAGES/{rel114-current}/[powerpc]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:145
+msgid "link:{url-rel}/powerpc/powerpc64/ISO-IMAGES/{rel114-current}/[powerpc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:146
+msgid "link:{url-rel}/sparc64/sparc64/ISO-IMAGES/{rel114-current}/[sparc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:147
+msgid "link:{url-rel}/arm64/aarch64/ISO-IMAGES/{rel114-current}/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:151
+msgid "link:{url-rel}/VM-IMAGES/{rel114-current}-RELEASE/amd64/Latest/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:152
+msgid "link:{url-rel}/VM-IMAGES/{rel114-current}-RELEASE/i386/Latest/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:153
+msgid "link:{url-rel}/VM-IMAGES/{rel114-current}-RELEASE/aarch64/Latest/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:156
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-BANANAPI.img.xz[BANANAPI]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:157
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-BEAGLEBONE.img.xz[BEAGLEBONE]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:158
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-CUBIEBOARD.img.xz[CUBIEBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:159
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-CUBIEBOARD2.img.xz[CUBIEBOARD2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:160
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-CUBOX-HUMMINGBOARD.img.xz[CUBOX-HUMMINGBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:161
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-RPI-B.img.xz[RPI-B]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:162
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-RPI2.img.xz[RPI2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:163
+msgid "link:{url-rel}/arm/armv6/ISO-IMAGES/{rel114-current}/FreeBSD-{rel114-current}-RELEASE-arm-armv6-WANDBOARD.img.xz[WANDBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:166
+msgid "link:../releases/#current[Released]: {rel114-current-date}"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:167
+msgid "link:{u-rel114-notes}[Release Notes]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:168
+msgid "link:{u-rel114-readme}[Readme]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:169
+msgid "link:{u-rel114-hardware}[Hardware Compatibility List]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:170
+msgid "link:{u-rel114-installation}[Installation Instructions]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:171
+msgid "link:{u-rel114-errata}[Errata]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:172
+msgid "link:{u-rel114-signatures}[Signed Checksums]"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:176
+#, no-wrap
+msgid "Development Snapshots"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:179
+msgid ""
+"If you are interested in a purely experimental *snapshot* release of "
+"FreeBSD-CURRENT (AKA {rel-head}-CURRENT), aimed at developers and "
+"bleeding-edge testers only, then please see the link:../snapshots/[FreeBSD "
+"Snapshot Releases] page. For more information about past, present and future "
+"releases in general, please visit the link:../releases/[release information "
+"page]."
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:180
+#, no-wrap
+msgid "FreeBSD {rel-head}-CURRENT"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:189
+msgid "link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel-head}/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:190
+msgid "link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel-head}/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:191
+msgid "link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel-head}/[powerpc]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:192
+msgid "link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel-head}/[powerpc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:193
+msgid "link:{url-snapshot}/powerpc/powerpc64le/ISO-IMAGES/{rel-head}/[powerpc64le]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:194
+msgid "link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel-head}/[powerpcspe]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:195
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel-head}/[armv6]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:196
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel-head}/[armv7]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:197
+msgid "link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel-head}/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:198
+msgid "link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel-head}/[riscv64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:201
+msgid "link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/amd64/Latest/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:202
+msgid "link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/i386/Latest/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:203
+msgid "link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/aarch64/Latest/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:204
+msgid "link:{url-snapshot}/VM-IMAGES/{rel-head}-CURRENT/riscv64/Latest/[riscv64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:207
+msgid "aarch64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:211
+msgid ""
+"{blank} ** link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel-head}/[PINE64] "
+"** link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel-head}/[PINE64-LTS] ** "
+"link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel-head}/[RPI3]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:212
+msgid "armv6/armv7"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:215
+msgid ""
+"{blank} ** link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel-head}/[GENERICSD] "
+"** link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel-head}/[RPI-B]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:216
+msgid "riscv64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:218
+msgid ""
+"{blank} ** "
+"link:{url-snapshot}/riscv/riscv64/ISO-IMAGES/{rel-head}/[GENERICSD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:221 website/content/en/where.adoc:246 website/content/en/where.adoc:264 website/content/en/where.adoc:300
+msgid "{blank}"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:224
+#, no-wrap
+msgid "FreeBSD {rel122-current}-STABLE"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:233
+msgid "link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel122-current}/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:234
+msgid "link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel122-current}/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:235
+msgid "link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel122-current}/[powerpc]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:236
+msgid "link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel122-current}/[powerpc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:237
+msgid "link:{url-snapshot}/powerpc/powerpcspe/ISO-IMAGES/{rel122-current}/[powerpcspe]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:238
+msgid "link:{url-snapshot}/sparc64/sparc64/ISO-IMAGES/{rel122-current}/[sparc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:239
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel122-current}/[armv6]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:240
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[armv7]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:241
+msgid "link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel122-current}/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:244
+msgid "link:{url-snapshot}/VM-IMAGES/{rel122-current}-STABLE/amd64/Latest/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:245
+msgid "link:{url-snapshot}/VM-IMAGES/{rel122-current}-STABLE/i386/Latest/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:249
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[BANANAPI]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:250
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[BEAGLEBONE]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:251
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[CUBIEBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:252
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[CUBIEBOARD2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:253
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[CUBOX/HUMMINGBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:254
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[GENERICSD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:255
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[PANDABOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:256
+msgid "link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel122-current}/[PINE64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:257
+msgid "link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel122-current}/[PINE64-LTS]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:258
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel122-current}/[RPI-B]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:259
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[RPI2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:260
+msgid "link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel122-current}/[RPI3]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:261
+msgid "link:{url-snapshot}/arm/armv7/ISO-IMAGES/{rel122-current}/[WANDBOARD]"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/where.adoc:267
+#, no-wrap
+msgid "FreeBSD {rel114-current}-STABLE"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:276
+msgid "link:{url-snapshot}/amd64/amd64/ISO-IMAGES/{rel114-current}/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:277
+msgid "link:{url-snapshot}/i386/i386/ISO-IMAGES/{rel114-current}/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:278
+msgid "link:{url-snapshot}/powerpc/powerpc/ISO-IMAGES/{rel114-current}/[powerpc]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:279
+msgid "link:{url-snapshot}/powerpc/powerpc64/ISO-IMAGES/{rel114-current}/[powerpc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:280
+msgid "link:{url-snapshot}/sparc64/sparc64/ISO-IMAGES/{rel114-current}/[sparc64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:281
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[armv6]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:282
+msgid "link:{url-snapshot}/arm64/aarch64/ISO-IMAGES/{rel114-current}/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:285
+msgid "link:{url-snapshot}/VM-IMAGES/{rel114-current}-STABLE/amd64/Latest/[amd64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:286
+msgid "link:{url-snapshot}/VM-IMAGES/{rel114-current}-STABLE/i386/Latest/[i386]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:287
+msgid "link:{url-snapshot}/VM-IMAGES/{rel114-current}-STABLE/aarch64/Latest/[aarch64]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:290
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[BANANAPI]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:291
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[BEAGLEBONE]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:292
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[CUBIEBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:293
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[CUBIEBOARD2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:294
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[CUBOX/HUMMINGBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:295
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[RPI2]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:296
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[RPI-B]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:297
+msgid "link:{url-snapshot}/arm/armv6/ISO-IMAGES/{rel114-current}/[WANDBOARD]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:304
+msgid ""
+"If you plan on getting FreeBSD via HTTP or FTP, please check the listing of "
+"*link:{handbook}#mirrors-ftp[mirror sites]* in the Handbook to see if there "
+"is a site closer to you."
+msgstr ""
+
+#. type: Title ===
+#: website/content/en/where.adoc:306
+#, no-wrap
+msgid "Install FreeBSD"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:309
+msgid ""
+"There are many options for installing FreeBSD, including installation from "
+"CD-ROM, DVD, USB Memory Stick or even directly using anonymous FTP, HTTP, or "
+"NFS. Please read through the link:{handbook}#bsdinstall[FreeBSD installation "
+"guide] before downloading the entire FreeBSD distribution."
+msgstr ""
+
+#. type: Title ===
+#: website/content/en/where.adoc:311
+#, no-wrap
+msgid "Purchase FreeBSD Media"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:314
+msgid ""
+"FreeBSD can be acquired on CD-ROM or DVD from "
+"http://www.freebsdmall.com/[FreeBSD Mall], or one of the other "
+"link:{handbook}#mirrors[CD-ROM and DVD Publishers]."
+msgstr ""
+
+#. type: Title ===
+#: website/content/en/where.adoc:316
+#, no-wrap
+msgid "Past Releases"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:319
+msgid ""
+"For downloading past releases, please visit the "
+"http://ftp-archive.FreeBSD.org/pub/FreeBSD-Archive/old-releases/[FTP "
+"archive]."
+msgstr ""
+
+#. type: Title ===
+#: website/content/en/where.adoc:321
+#, no-wrap
+msgid "FreeBSD-derived Operating System Distributions"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:324
+msgid ""
+"FreeBSD is widely used as a building block for other commercial and "
+"open-source operating systems. The projects below are widely used and of "
+"particular interest to FreeBSD users."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:326
+msgid ""
+"https://www.freenas.org[FreeNAS] is an open source storage platform based on "
+"FreeBSD and supports sharing across Windows, Apple, and UNIX-like systems."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:327
+msgid ""
+"https://ghostbsd.org[GhostBSD] is derived from FreeBSD, GhostBSD uses the "
+"GTK environment to provide a beautiful looks and comfortable experience on "
+"the modern BSD platform offering a natural and native &unix; work "
+"environment."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:328
+msgid ""
+"https://www.midnightbsd.org[MidnightBSD] is a BSD-derived operating system "
+"developed with desktop users in mind. It includes all the software you'd "
+"expect for your daily tasks: mail, web browsing, word processing, gaming, "
+"and much more."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:329
+msgid ""
+"https://www.nomadbsd.org[NomadBSD] is a persistent live system for USB flash "
+"drives, based on FreeBSD. Together with automatic hardware detection and "
+"setup, it is configured to be used as a desktop system that works out of the "
+"box, but can also be used for data recovery, for educational purposes, or to "
+"test FreeBSD's hardware compatibility."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:330
+msgid ""
+"http://www.pfsense.org[pfSense] is a FreeBSD based customized distribution "
+"tailored for use as a firewall and router."
+msgstr ""
+
+#. type: Title ===
+#: website/content/en/where.adoc:332
+#, no-wrap
+msgid "Applications and Utility Software"
+msgstr ""
+
+#. type: Title ====
+#: website/content/en/where.adoc:334
+#, no-wrap
+msgid "The Ports Collection"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:337
+msgid ""
+"The FreeBSD Ports Collection is a diverse collection of utility and "
+"application software that has been ported to FreeBSD."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:339
+msgid ""
+"See *link:{handbook}#ports[Installing Applications: Packages and Ports]* in "
+"the Handbook."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:341
+msgid ""
+"ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/[Download the FreeBSD Ports "
+"Collection framework]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:342
+msgid "link:../ports/[Web interface to the Ports Collection]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:343
+msgid ""
+"http://www.freshports.org/[FreshPorts - a more advanced web interface to the "
+"Ports Collection]"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/where.adoc:344
+msgid ""
+"For information about how _you_ can contribute _your_ favorite piece of "
+"software to the Ports Collection, have a look at "
+"_link:{porters-handbook}[The Porter's Handbook]_ and the article "
+"_link:{contributing}[Contributing to FreeBSD]_."
+msgstr ""
