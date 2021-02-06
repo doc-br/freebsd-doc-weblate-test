@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 16:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: website/content/en/releases/12.1R/signatures.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/12.1R/signatures.adoc:4
+#, no-wrap
+msgid ""
+"title: \"FreeBSD 12.1 Release Checksum Signatures\"\n"
+"sidenav: download\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: website/content/en/releases/12.1R/signatures.adoc:13
+#, no-wrap
+msgid "FreeBSD {localRel} Release Checksum Signatures"
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/releases/12.1R/signatures.adoc:15
+#, no-wrap
+msgid "Signed Checksum Signatures"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/12.1R/signatures.adoc:18
+msgid ""
+"This page contains links to the PGP-signed checksum files for FreeBSD "
+"{localRel}."
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/releases/12.1R/signatures.adoc:19
+#, no-wrap
+msgid "Installation Image Checksums"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/12.1R/signatures.adoc:34
+msgid ""
+"|=== |Architecture |`SHA512` |`SHA256` |amd64 (x86_64) "
+"|link:{localRelSha512}-amd64.asc[SHA512] "
+"|link:{localRelSha256}-amd64.asc[SHA256] |i386 "
+"|link:{localRelSha512}-i386.asc[SHA512] "
+"|link:{localRelSha256}-i386.asc[SHA256] |powerpc "
+"|link:{localRelSha512}-powerpc.asc[SHA512] "
+"|link:{localRelSha256}-powerpc.asc[SHA256] |powerpc64 "
+"|link:{localRelSha512}-powerpc-powerpc64.asc[SHA512] "
+"|link:{localRelSha256}-powerpc-powerpc64.asc[SHA256] |powerpcspe "
+"|link:{localRelSha512}-powerpc-powerpcspe.asc[SHA512] "
+"|link:{localRelSha256}-powerpc-powerpcspe.asc[SHA256] |sparc64 "
+"|link:{localRelSha512}-sparc64.asc[SHA512] "
+"|link:{localRelSha256}-sparc64.asc[SHA256] |aarch64 "
+"|link:{localRelSha512}-arm64-aarch64.asc[SHA512] "
+"|link:{localRelSha256}-arm64-aarch64.asc[SHA256] |==="
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/releases/12.1R/signatures.adoc:35
+#, no-wrap
+msgid "Virtual Machine Image Checksums"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/12.1R/signatures.adoc:46
+msgid ""
+"|=== |Architecture |`SHA512` |`SHA256` |amd64 (x86_64) "
+"|link:{localRelSha512}-amd64-vm.asc[SHA512] "
+"|link:{localRelSha256}-amd64-vm.asc[SHA256] |i386 "
+"|link:{localRelSha512}-i386-vm.asc[SHA512] "
+"|link:{localRelSha256}-i386-vm.asc[SHA256] |aarch64 "
+"|link:{localRelSha512}-arm64-aarch64-vm.asc[SHA512] "
+"|link:{localRelSha256}-arm64-aarch64-vm.asc[SHA256] |==="
+msgstr ""
+
+#. type: Title ==
+#: website/content/en/releases/12.1R/signatures.adoc:47
+#, no-wrap
+msgid "SD Card Image Checksums"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/releases/12.1R/signatures.adoc:67
+msgid ""
+"|=== |Board Name |`SHA512` |`SHA256` |RPI-B "
+"|link:{localRelSha512}-arm-armv6-RPI-B.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv6-RPI-B.asc[SHA256] |BANANAPI "
+"|link:{localRelSha512}-arm-armv7-BANANAPI.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-BANANAPI.asc[SHA256] |BEAGLEBONE "
+"|link:{localRelSha512}-arm-armv7-BEAGLEBONE.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-BEAGLEBONE.asc[SHA256] |CUBIEBOARD "
+"|link:{localRelSha512}-arm-armv7-CUBIEBOARD.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-CUBIEBOARD.asc[SHA256] |CUBIEBOARD2 "
+"|link:{localRelSha512}-arm-armv7-CUBIEBOARD2.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-CUBIEBOARD2.asc[SHA256] |CUBOX/HUMMINGBOARD "
+"|link:{localRelSha512}-arm-armv7-CUBOX-HUMMINGBOARD.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-CUBOX-HUMMINGBOARD.asc[SHA256] |GENERICSD "
+"|link:{localRelSha512}-arm-armv7-GENERICSD.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-GENERICSD.asc[SHA256] |PANDABOARD "
+"|link:{localRelSha512}-arm-armv7-PANDABOARD.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-PANDABOARD.asc[SHA256] |RPI2 "
+"|link:{localRelSha512}-arm-armv7-RPI2.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-RPI2.asc[SHA256] |WANDBOARD "
+"|link:{localRelSha512}-arm-armv7-WANDBOARD.asc[SHA512] "
+"|link:{localRelSha256}-arm-armv7-WANDBOARD.asc[SHA256] |RPI3 "
+"|link:{localRelSha512}-arm64-aarch64-RPI3.asc[SHA512] "
+"|link:{localRelSha256}-arm64-aarch64-RPI3.asc[SHA256] |PINE64 "
+"|link:{localRelSha512}-arm64-aarch64-PINE64.asc[SHA512] "
+"|link:{localRelSha256}-arm64-aarch64-PINE64.asc[SHA256] |PINE64-LTS "
+"|link:{localRelSha512}-arm64-aarch64-PINE64-LTS.asc[SHA512] "
+"|link:{localRelSha256}-arm64-aarch64-PINE64-LTS.asc[SHA256] |==="
+msgstr ""
