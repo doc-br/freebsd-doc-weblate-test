@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2021-01-30 16:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:1
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:4
+#, no-wrap
+msgid ""
+"title: \"Ports and Packages for Supported Releases\"\n"
+"sidenav: about\n"
+"---\n"
+msgstr ""
+
+#. type: Title =
+#: website/content/en/portmgr/policies_eol.adoc:8
+#, no-wrap
+msgid "Ports and Packages for Supported Releases"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:11
+msgid ""
+"Support of FreeBSD releases by ports and the ports infrastructure currently "
+"matches the link:../../security/#sup[policies set out by the FreeBSD "
+"Security Officer]. Once a major branch X reaches its EOL date, the \"last "
+"known good\" ports tree will be tagged with the `RELEASE_X_EOL` tag as a "
+"convenience to those remaining users who intend to self-support their "
+"installations. This tag is not supported in any way and security fixes will "
+"not be applied. Usage is therefore highly discouraged and should only be "
+"used if there is no other option; consumers are expected to provide their "
+"own support."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:13
+msgid ""
+"For all supported major src branches, all ports will be included in an "
+"automated quality assurance procedure which will build, install, package, "
+"and deinstall each port on all link:{committers-guide}#AEN1259[Tier 1 "
+"platforms]. Maintainers and committers are notified of failures detected "
+"during testing. Ports that are known not to build or run on a given "
+"supported branch and/or platform will be marked as such."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:15
+msgid ""
+"Prebuilt binary packages will also be provided for all major branches and "
+"Tier 1 platforms and will be made available via "
+"https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8[pkg(8)]. Package "
+"builds will use the oldest supported minor release within each major branch "
+"to ensure ABI and KBI backwards compatibility within each major branch, and "
+"support all minor versions of each major branch, including `-RELEASE` and "
+"`-STABLE`."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:17
+msgid ""
+"The current package sets and estimated lifetimes of the currently supported "
+"branches are given below. The _Estimated EoL (end-of-life)_ column gives the "
+"earliest date on which that branch is likely to be dropped."
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:23
+msgid ""
+"|=== |Branch |Release |Package Branch |Package Set |Estimated EoL |stable/11 "
+"|n/a |releng/11.2 a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:24 website/content/en/portmgr/policies_eol.adoc:33
+msgid "FreeBSD:11:aarch64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:25 website/content/en/portmgr/policies_eol.adoc:34
+msgid "FreeBSD:11:amd64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:26 website/content/en/portmgr/policies_eol.adoc:35
+msgid "FreeBSD:11:armv6"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:27 website/content/en/portmgr/policies_eol.adoc:36
+msgid "FreeBSD:11:i386"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:28 website/content/en/portmgr/policies_eol.adoc:37
+msgid "FreeBSD:11:mips"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:29 website/content/en/portmgr/policies_eol.adoc:38
+msgid "FreeBSD:11:mips64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:32
+msgid "|September 30, 2021 |releng/11.2 |11.2-RELEASE |releng/11.2 a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:41
+msgid "|11.3-RELEASE + 3 months |stable/12 |n/a |releng/12.0 a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:42 website/content/en/portmgr/policies_eol.adoc:53
+msgid "FreeBSD:12:aarch64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:43 website/content/en/portmgr/policies_eol.adoc:54
+msgid "FreeBSD:12:amd64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:44 website/content/en/portmgr/policies_eol.adoc:55
+msgid "FreeBSD:12:armv6"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:45 website/content/en/portmgr/policies_eol.adoc:56 website/content/en/portmgr/policies_eol.adoc:67
+msgid "FreeBSD:12:armv7"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:46 website/content/en/portmgr/policies_eol.adoc:57
+msgid "FreeBSD:12:i386"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:47 website/content/en/portmgr/policies_eol.adoc:58
+msgid "FreeBSD:12:mips"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:48 website/content/en/portmgr/policies_eol.adoc:59
+msgid "FreeBSD:12:mips64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:49 website/content/en/portmgr/policies_eol.adoc:60
+msgid "FreeBSD:12:powerpc64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:52
+msgid "|June 30, 2024 |releng/12.0 |12.0-RELEASE |releng/12.0 a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:63
+msgid "|12.1-RELEASE + 3 months |HEAD |n/a |HEAD a|"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:64
+msgid "FreeBSD:13:aarch64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:65
+msgid "FreeBSD:13:amd64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:66
+msgid "FreeBSD:13:armv6"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:68
+msgid "FreeBSD:13:i386"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:69
+msgid "FreeBSD:13:mips"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:70
+msgid "FreeBSD:13:mips64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:71
+msgid "FreeBSD:13:powerpc64"
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:74
+msgid "|Best Effort |==="
+msgstr ""
+
+#. type: Plain text
+#: website/content/en/portmgr/policies_eol.adoc:75
+msgid ""
+"Older releases are not maintained; ports and packages may not be able to "
+"install or run. Users are strongly encouraged to upgrade to one of the "
+"supported releases mentioned above."
+msgstr ""
